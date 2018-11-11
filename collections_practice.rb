@@ -20,3 +20,11 @@ def swap_elements_from_to(array, index, destination_index)
   array[index] = array[destination_index]
   array[destination_index] = original
 end
+
+def reverse_array(array)
+  array.sort {|a, b| array.index(b) <=> array.index(a)}
+end
+
+def sum_array(array)
+  array.inject(|sum, n| sum + n)
+end
