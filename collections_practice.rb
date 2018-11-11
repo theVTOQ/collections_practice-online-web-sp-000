@@ -35,6 +35,10 @@ def kesha_maker(array)
   end
 end
 
+def find_a(array)
+  array.select {|word| word.lower.start_with?("a")}
+end
+
 def sum_array(array)
   array.inject {|sum, n| sum + n}
 end
