@@ -27,6 +27,12 @@ def reverse_array(array)
   array.sort {|a, b| array.index(b) <=> array.index(a)}
 end
 
+def kesha_maker(array)
+  array.collect do |string|
+    array.split(//)[2] == "$"
+  end
+end
+
 def sum_array(array)
   array.inject {|sum, n| sum + n}
 end
