@@ -28,3 +28,7 @@ end
 def sum_array(array)
   array.inject(|sum, n| sum + n)
 end
+
+def add_s(words)
+  words.each_with_index.collect{|word, index| word << "s" unless index == 1}
+end
