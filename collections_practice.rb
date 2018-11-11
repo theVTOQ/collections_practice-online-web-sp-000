@@ -35,6 +35,8 @@ def kesha_maker(array)
   end
 end
 
+"blake".split(//)
+
 def sum_array(array)
   array.inject {|sum, n| sum + n}
 end
