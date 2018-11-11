@@ -46,5 +46,3 @@ end
 def add_s(words)
   words.each_with_index.collect{|word, index| word << "s" unless index == 1}
 end
-
-puts swap_elements_from_to(["a", "b", "c"],0,2)
