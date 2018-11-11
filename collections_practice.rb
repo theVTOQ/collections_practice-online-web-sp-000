@@ -29,7 +29,8 @@ end
 
 def kesha_maker(array)
   array.collect do |string|
-    string.split(//)[2] == "$"
+    kesha_array = string.split(//)[2] == "$"
+    kesha_array.join
   end
 end
 
